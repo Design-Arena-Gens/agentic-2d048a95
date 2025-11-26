@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Direction for Persian */
+html {
+  direction: rtl;
+}
+
+/* Smooth scroll and tweaks */
+:root {
+  --radius: 0.75rem;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased;
+}
+
+.container-responsive {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-medium transition;
+}
+.btn-primary {
+  @apply bg-primary-600 text-white hover:bg-primary-700 shadow;
+}
+.btn-outline {
+  @apply border border-slate-300 hover:border-primary-600 hover:text-primary-700 rounded-xl px-5 py-3;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white/80 backdrop-blur shadow-sm;
+}
+
